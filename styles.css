@@ -46,4 +46,33 @@ body{
     height: 2px;
     background-color: #FFD700;
 }
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__zoomInUp {
+    --animate-duration: 5s;
+  }
+
+  /* This only changes this particular animation duration */
+.animate__animated.animate__zoomInLeft {
+    --animate-duration: 5s;
+  }
   
+
+  /* Estilos adicionais para o botão de âncora */
+  #btn-anchor {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 99;
+    transition: background-color 0.3s;
+}
+#btn-anchor:hover {
+    background-color: #FFD700;
+}
