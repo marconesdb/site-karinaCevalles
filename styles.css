@@ -30,4 +30,9 @@ body{
     background: linear-gradient(45deg, #8f8238, #c99534); /* Gradiente de cor para o texto */
     -webkit-background-clip: text; /* Clip do gradiente ao texto */
     color: transparent; /* Torna o texto transparente para exibir o gradiente */
+    
+  }
+
+  .justica{
+    border-radius: 0px 100px 0px 0px;
   }
