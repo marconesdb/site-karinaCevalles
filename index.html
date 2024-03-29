@@ -30,45 +30,42 @@
         </div>
     </div>
     
-  
-     
-    <!-- Navbar Responsiva -->
-    <nav class="bg-gray-800 p-6">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <div>
-                <a href="#" class="text-white text-lg font-semibold">
-                    <img src="./img/file.jpeg" alt="" class="w-24 h-20"> <!-- Aqui estou definindo a largura e altura da imagem como 16 unidades -->
-                </a>
-                
-            </div>
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <!-- Ícone do menu (hamburger) -->
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="#" class="text-white text-lg">Home</a>
-                <a href="#" class="text-white text-lg">Sobre</a>
-                <a href="#" class="text-white text-lg">Serviços</a>
-                <a href="#" class="text-white text-lg">Contato</a>
-               
-            </div>
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-6">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div>
+            <a href="#" class="text-white text-lg font-semibold">
+                <img src="./img/file.jpeg" alt="" class="w-24 h-20"> <!-- Aqui estou definindo a largura e altura da imagem como 16 unidades -->
+            </a>
         </div>
-        <!-- Submenus (mostrados em dispositivos móveis) -->
-        <div id="submenus" class="hidden md:hidden bg-gray-700 text-white">
-            <ul class="p-2">
-                <li><a href="#" class="block p-2">Home</a></li>
-                <li><a href="#" class="block p-2">Sobre</a></li>
-                <li><a href="#" class="block p-2">Serviços</a></li>
-                <li><a href="#" class="block p-2">Contato</a></li>
-            </ul>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <!-- Ícone do menu (hamburger) -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
         </div>
-    </nav>
+        <div class="hidden md:flex items-center space-x-4">
+            <a href="#" class="text-white text-lg relative md:hover:text-gold">Home</a>
+            <a href="#" class="text-white text-lg relative md:hover:text-gold">Sobre</a>
+            <a href="#" class="text-white text-lg relative md:hover:text-gold">Serviços</a>
+            <a href="#" class="text-white text-lg relative md:hover:text-gold">Contato</a>
+        </div>
+    </div>
+    <!-- Submenus (mostrados em dispositivos móveis) -->
+    <div id="submenus" class="hidden md:hidden bg-gray-700 text-white">
+        <ul class="p-2">
+            <li><a href="#" class="block p-2">Home</a></li>
+            <li><a href="#" class="block p-2">Sobre</a></li>
+            <li><a href="#" class="block p-2">Serviços</a></li>
+            <li><a href="#" class="block p-2">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Fim Navbar -->
 <!-- Banner  Principal -->
     <div class="backgr-img bg-gray-200 py-8 px-4 md:px-0">
         <div class="max-w-7xl mx-auto">
@@ -140,6 +137,65 @@
     </div>
 </div>
 
+
+<!-- Cards -->
+<section class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-semibold text-center mb-8">Serviços</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Direito Civil</h2>
+                    <p class="text-gray-700">Atuação em questões relacionadas a contratos, família, propriedade, responsabilidade civil, entre outros.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Direito Penal</h2>
+                    <p class="text-gray-700">Defesa criminal em casos de crimes contra a pessoa, propriedade, patrimônio, entre outros.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Direito do Trabalho</h2>
+                    <p class="text-gray-700">Assessoria a empresas e trabalhadores em questões trabalhistas, contratos, demissões, entre outros.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Direito Tributário</h2>
+                    <p class="text-gray-700">Consultoria e defesa em questões relacionadas a impostos, tributos, planejamento tributário, entre outros.</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Direito Empresarial</h2>
+                    <p class="text-gray-700">Assessoria a empresas em constituição, contratos sociais, fusões, aquisições, entre outros.</p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Direito Ambiental</h2>
+                    <p class="text-gray-700">Assessoria em questões relacionadas ao meio ambiente, licenciamento ambiental, regularização de atividades, entre outros.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fim  -->
 <footer class="bg-gray-800 text-white py-8">
     <div class="container mx-auto px-4">
         <div class="md:flex md:justify-between items-center"> <!-- Adicionei a classe 'items-center' para centralizar verticalmente na versão mobile -->
@@ -184,6 +240,17 @@
                 submenus.classList.add("hidden");
             }
         });
-    </script>  
+    </script> 
+    <script>
+        // Adiciona a classe 'active' ao tocar em um link da navbar na versão móvel
+        document.querySelectorAll('.text-white.relative').forEach(link => {
+            link.addEventListener('touchstart', () => {
+                link.classList.add('active');
+            });
+            link.addEventListener('touchend', () => {
+                link.classList.remove('active');
+            });
+        });
+    </script> 
 </body>
 </html>
