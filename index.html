@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karina Cevalles</title>
+    <title>Karina Cevalles - Advocacia</title>
     <!-- Adicione o link para o Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Adicione o link para o CDN do FontAwesome -->
@@ -14,7 +14,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link href="styles.css" rel="stylesheet">
-     
+  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
      
@@ -57,6 +58,7 @@
             <a href="#home" class="text-white text-lg relative md:hover:text-gold">Home</a>
             <a href="#sobre" class="text-white text-lg relative md:hover:text-gold">Sobre</a>
             <a href="#servicos" class="text-white text-lg relative md:hover:text-gold">Serviços</a>
+            <a href="#blog" class="text-white text-lg relative md:hover:text-gold">Blog</a>
             <a href="#contato" class="text-white text-lg relative md:hover:text-gold">Contato</a>
         </div>
     </div>
@@ -66,6 +68,7 @@
             <li><a href="#home" class="block p-2">Home</a></li>
             <li><a href="#sobre" class="block p-2">Sobre</a></li>
             <li><a href="#servicos" class="block p-2">Serviços</a></li>
+            <li><a href="#blog" class="block p-2">Blog</a></li>
             <li><a href="#contato" class="block p-2">Contato</a></li>
         </ul>
     </div>
@@ -95,7 +98,7 @@
  <!-- Container Responsivo com Imagem à Direita  e Texto à Esquerda  -->
 <div class="container mx-auto px-4 py-8 md:py-16 flex flex-col md:flex-row items-center">
     <div class="md:w-1/2 md:order-1  md:mx-0 md:mb-8"> <!-- Adicionando margem de 4 unidades para dispositivos móveis e removendo a margem para desktop -->
-        <h1 class="text-center text-4xl md:text-6xl font-extrabold mb-4" style="background: linear-gradient(45deg, #8f8238, #c99534); -webkit-background-clip: text; background-clip: text; color: transparent;">Conheça Karina Cevalles</h1>
+        <h1 class="text-center text-4xl md:text-6xl font-extrabold mb-4" style="background: linear-gradient(45deg, #8f8238, #c99534); -webkit-background-clip: text; background-clip: text; color: transparent;">Sobre mim</h1>
         <div class="bg-gray-gradient bg-gradient-to-r from-gray-200 to-white md:ml-0 md:mr-auto md:max-w-2xl  md:p-8 rounded-lg"> <!-- Adicionando margem à direita para dispositivos móveis e ajustando o preenchimento -->
             <div class="text-center sm:text-left"> <!-- Alterando para sm:text-left para que o texto seja alinhado à esquerda em dispositivos menores -->
                 <p id="sobre" class="text-gradient text-lg md:text-xl lg:text-2xl text-justify"> <!-- Alterando para text-justify para justificar o texto -->
@@ -242,8 +245,37 @@
     </div>
 </section>
 <!-- Fim do FAC -->
+<!-- Depoimentos de Clientes -->
+<!-- Testemunhos de Clientes -->
+<section class="py-16 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Testemunhos de Clientes</h2>
 
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testemunho 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                <img src="img/cliente1.jpg" alt="Cliente 1" class="w-16 h-16 rounded-full mb-4">
+                <p class="text-lg mb-4">"Excelente serviço, fui muito bem atendido pelo advogado. Recomendo!"</p>
+                <p class="text-gray-600">- João Silva</p>
+            </div>
 
+            <!-- Testemunho 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                <img src="img/cliente2.jpg" alt="Cliente 2" class="w-16 h-16 rounded-full mb-4">
+                <p class="text-lg mb-4">"Profissionalismo e eficiência impecáveis. Estou muito satisfeito com o resultado."</p>
+                <p class="text-gray-600">- Maria Santos</p>
+            </div>
+
+            <!-- Testemunho 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                <img src="img/cliente3.jpg" alt="Cliente 3" class="w-16 h-16 rounded-full mb-4">
+                <p class="text-lg mb-4">"Atendimento personalizado e resolução rápida do meu caso. Recomendo sem dúvidas!"</p>
+                <p class="text-gray-600">- Pedro Oliveira</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fim -->
 <!-- HR estilizado com Tailwind CSS -->
 <div class="relative mt-16">
     <hr class="border-t-2 border-gray-300 my-8">
@@ -341,5 +373,6 @@
     <script src="hover.js"></script>
     <script src="ancora.js"></script>
     <script src="FAC.js"></script>
+    <script src="depoimentos.js"></script>
 </body>
 </html>

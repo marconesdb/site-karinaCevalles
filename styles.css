@@ -113,3 +113,13 @@ body{
 .accordion input:checked~.accordion-content {
     display: block;
 }
+
+
+  /* Estilos adicionais */
+  .testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
