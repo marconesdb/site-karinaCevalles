@@ -146,7 +146,7 @@
 
 
 <!-- Cards -->
-<section  class="bg-gray-100 mr-4 ml-4">
+<section  class="mr-4 ml-4">
     <div class="container mx-auto py-8">
         <h1 id="servicos" class="text-3xl font-semibold text-center mb-8">Serviços</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -204,16 +204,27 @@
 
 <!-- Fim  -->
 
+<!-- HR estilizado com Tailwind CSS -->
+<div class="relative ">
+    <hr class="border-t-2 border-gray-300 my-8">
+    <!-- Ícone no meio da linha HR -->
+    <div class="absolute inset-0 flex items-center justify-center ">
+        <!-- Ícone pode ser adicionado aqui -->
+        <img src="img/email.png" alt="" width="5%" />
+    </div>
+</div>
+
+
+
+
+
 <!-- Formulário -->
-<section class="bg-gray-100">
-    <div class="container mx-auto px-4 py-8 md:flex md:justify-center">
-        <!-- Imagem -->
-        <div class="img-form md:w-1/2 md:pr-8 mb-4 md:mb-0 flex items-center justify-center">
-            <img src="img/email.png" alt="Imagem" class="mx-auto w-full md:max-w-sm">
-        </div>
-        
+
+
+<section class="bg-gray-100 mt-16">
+    <div class="container mx-auto px-4 py-8">
         <!-- Formulário -->
-        <form class="md:w-1/2 max-w-lg bg-gray-200 p-8 rounded-lg shadow-md">
+        <form class="md:w-1/2 max-w-lg bg-gray-200 p-8 rounded-lg shadow-md mx-auto">
             <h2 id="contato" class="text-2xl font-bold text-center mb-4">Entre em Contato</h2>
             <div class="mb-4">
                 <label for="nome" class="block text-gray-700 font-bold mb-2">Nome:</label>
@@ -246,7 +257,7 @@
 
 
        
-<!--  -->
+<!-- Fim do Formulário -->
     <!-- Âncora -->
         <!-- Botão de âncora -->
 <button id="btn-anchor" onclick="scrollToTop()">
