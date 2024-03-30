@@ -92,11 +92,11 @@
         </div>
     </a>
 
- <!-- Container Responsivo com Imagem à Esquerda e Texto à Direita -->
+ <!-- Container Responsivo com Imagem à Direita  e Texto à Esquerda  -->
 <div class="container mx-auto px-4 py-8 md:py-16 flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2 md:order-1 mx-4 md:mx-0 md:mb-8"> <!-- Adicionando margem de 4 unidades para dispositivos móveis e removendo a margem para desktop -->
-        <h1 class="text-center text-4xl md:text-6xl font-extrabold mb-4" style="background: linear-gradient(45deg, #8f8238, #c99534); -webkit-background-clip: text; background-clip: text; color: transparent;">Karina Cevalles</h1>
-        <div class="bg-gray-gradient bg-gradient-to-r from-gray-200 to-white md:ml-0 md:mr-auto md:max-w-2xl p-4 md:p-8 rounded-lg"> <!-- Adicionando margem à direita para dispositivos móveis e ajustando o preenchimento -->
+    <div class="md:w-1/2 md:order-1  md:mx-0 md:mb-8"> <!-- Adicionando margem de 4 unidades para dispositivos móveis e removendo a margem para desktop -->
+        <h1 class="text-center text-4xl md:text-6xl font-extrabold mb-4" style="background: linear-gradient(45deg, #8f8238, #c99534); -webkit-background-clip: text; background-clip: text; color: transparent;">Conheça Karina Cevalles</h1>
+        <div class="bg-gray-gradient bg-gradient-to-r from-gray-200 to-white md:ml-0 md:mr-auto md:max-w-2xl  md:p-8 rounded-lg"> <!-- Adicionando margem à direita para dispositivos móveis e ajustando o preenchimento -->
             <div class="text-center sm:text-left"> <!-- Alterando para sm:text-left para que o texto seja alinhado à esquerda em dispositivos menores -->
                 <p id="sobre" class="text-gradient text-lg md:text-xl lg:text-2xl text-justify"> <!-- Alterando para text-justify para justificar o texto -->
                     Karina Cevalles é uma advogada com uma paixão ardente pelo campo jurídico e um compromisso inabalável em buscar justiça para seus clientes. Sua jornada na advocacia começou com uma sólida formação acadêmica, onde obteve seu diploma em Direito em uma das principais universidades do país.
@@ -114,8 +114,8 @@
             </div>
         </div>
     </div>
-    <div class="md:w-1/2 md:order-2 mb-8 md:mb-0 ml-16 mr-16"> <!-- Adicionando margem direita e esquerda de 4 unidades -->
-        <img src="./img/pexels-katrin-bolovtsova-6077123.jpg" alt="Imagem" class="justica w-70 h-auto mx-auto md:mr-16 "> <!-- Adicionando margem direita para desktop -->
+    <div class="md:w-1/2 md:order-2 mb-8 md:mb-0 ml-4 mr-4"> <!-- Adicionando margem direita e esquerda de 4 unidades -->
+        <img src="./img/pexels-katrin-bolovtsova-6077123.jpg" alt="Imagem" class="justica w-full h-auto mx-auto md:mr-16 "> <!-- Adicionando margem direita para desktop -->
     </div>
 </div>
 
@@ -206,36 +206,35 @@
 
 <!-- Formulário -->
 <section class="bg-gray-100">
-
-    <div class="container mx-auto py-8">
-        <h2 id="contato" class="text-2xl font-bold text-center mb-4">Entre em Contato</h2>
-    
-        <form class="max-w-lg mx-auto bg-gray-200 p-8 rounded-lg shadow-md">
+    <div class="container mx-auto px-4 py-8 md:flex md:justify-center">
+        <!-- Imagem -->
+        <div class="img-form md:w-1/2 md:pr-8 mb-4 md:mb-0 flex items-center justify-center">
+            <img src="img/email.png" alt="Imagem" class="mx-auto w-full md:max-w-sm">
+        </div>
+        
+        <!-- Formulário -->
+        <form class="md:w-1/2 max-w-lg bg-gray-200 p-8 rounded-lg shadow-md">
+            <h2 id="contato" class="text-2xl font-bold text-center mb-4">Entre em Contato</h2>
             <div class="mb-4">
                 <label for="nome" class="block text-gray-700 font-bold mb-2">Nome:</label>
                 <input type="text" id="nome" name="nome" class="form-input w-full" required>
             </div>
-    
             <div class="mb-4">
                 <label for="email" class="block text-gray-700 font-bold mb-2">E-mail:</label>
                 <input type="email" id="email" name="email" class="form-input w-full" required>
             </div>
-    
             <div class="mb-4">
                 <label for="telefone" class="block text-gray-700 font-bold mb-2">Telefone:</label>
                 <input type="text" id="telefone" name="telefone" class="form-input w-full">
             </div>
-    
             <div class="mb-4">
                 <label for="assunto" class="block text-gray-700 font-bold mb-2">Assunto:</label>
                 <input type="text" id="assunto" name="assunto" class="form-input w-full" required>
             </div>
-    
             <div class="mb-4">
                 <label for="mensagem" class="block text-gray-700 font-bold mb-2">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" class="form-textarea w-full h-32" required></textarea>
             </div>
-    
             <div class="text-center">
                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                     Enviar
@@ -243,9 +242,11 @@
             </div>
         </form>
     </div>
-    
-    </section>
+</section>
 
+
+       
+<!--  -->
     <!-- Âncora -->
         <!-- Botão de âncora -->
 <button id="btn-anchor" onclick="scrollToTop()">
