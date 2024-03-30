@@ -151,12 +151,12 @@
 
 
 <!-- Cards -->
-<section  class="mr-4 ml-4">
-    <div class="container mx-auto py-8">
-        <h1 id="servicos" class="text-3xl font-semibold text-center mb-8">Serviços</h1>
+<section  class=" bg-gradient-to-b from-gray-800 via-gray-700 to-gray-600">
+    <div class="container mx-auto py-8 ">
+        <h1 id="servicos" class="text-3xl font-semibold text-center mb-8 text-white">Serviços</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Card 1 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md mr-4 ml-4">
                 <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h2 class="text-xl font-semibold mb-2">Direito Civil</h2>
@@ -164,7 +164,7 @@
                 </div>
             </div>
             <!-- Card 2 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md mr-4 ml-4">
                 <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h2 class="text-xl font-semibold mb-2">Direito Penal</h2>
@@ -172,7 +172,7 @@
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md mr-4 ml-4">
                 <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h2 class="text-xl font-semibold mb-2">Direito do Trabalho</h2>
@@ -180,7 +180,7 @@
                 </div>
             </div>
             <!-- Card 4 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md mr-4 ml-4">
                 <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h2 class="text-xl font-semibold mb-2">Direito Tributário</h2>
@@ -188,7 +188,7 @@
                 </div>
             </div>
             <!-- Card 5 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md mr-4 ml-4">
                 <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h2 class="text-xl font-semibold mb-2">Direito Empresarial</h2>
@@ -196,7 +196,7 @@
                 </div>
             </div>
             <!-- Card 6 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md mr-4 ml-4">
                 <img src="https://via.placeholder.com/400x200" alt="Imagem" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h2 class="text-xl font-semibold mb-2">Direito Ambiental</h2>
@@ -210,67 +210,92 @@
 <!-- Fim  -->
 
 <!-- FAC - Perguntas e Respostas -->
-<section  id="faq" class="bg-gray-100 py-16">
+<section id="faq" class="bg-gray-400 py-16">
     <div class="container mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8">Perguntas Frequentes</h2>
 
         <div class="accordion">
             <!-- Pergunta 1 -->
-            <input type="checkbox" id="question1">
-            <label for="question1">Qual é o prazo para entrar com uma ação?</label>
-            <div class="accordion-content">
-                <p>O prazo para entrar com uma ação varia de acordo com o tipo de processo e a legislação aplicável em cada caso específico. É recomendável consultar um advogado para obter informações precisas sobre o prazo aplicável ao seu caso.</p>
+            <div class="question">
+                <div class="question-title relative block bg-gray-300 rounded-md p-4 mb-2 cursor-pointer">
+                    <span class="text-xl">Qual é o prazo para entrar com uma ação?</span>
+                    <svg class="h-6 w-6 absolute top-1 right-1 transform transition-transform duration-300 arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+                <div class="accordion-content bg-gray-100 rounded-md p-4 hidden">
+                    <p>O prazo para entrar com uma ação varia de acordo com o tipo de processo e a legislação aplicável em cada caso específico. É recomendável consultar um advogado para obter informações precisas sobre o prazo aplicável ao seu caso.</p>
+                </div>
             </div>
 
             <!-- Pergunta 2 -->
-            <input type="checkbox" id="question2">
-            <label for="question2">Quais são os documentos necessários para iniciar um processo?</label>
-            <div class="accordion-content">
-                <p>Os documentos necessários para iniciar um processo podem variar dependendo do tipo de ação que está sendo proposta. Geralmente, são necessários documentos de identificação pessoal, comprovante de endereço, contratos relevantes, entre outros. Um advogado pode orientá-lo sobre os documentos específicos necessários para o seu caso.</p>
+            <div class="question">
+                <div class="question-title relative block bg-gray-300 rounded-md p-4 mb-2 cursor-pointer">
+                    <span class="text-xl">Quais são os documentos necessários para iniciar um processo?</span>
+                    <svg class="h-6 w-6 absolute top-1 right-1 transform transition-transform duration-300 arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+                <div class="accordion-content bg-gray-100 rounded-md p-4 hidden">
+                    <p>Os documentos necessários para iniciar um processo podem variar dependendo do tipo de ação que está sendo proposta. Geralmente, são necessários documentos de identificação pessoal, comprovante de endereço, contratos relevantes, entre outros. Um advogado pode orientá-lo sobre os documentos específicos necessários para o seu caso.</p>
+                </div>
             </div>
 
             <!-- Pergunta 3 -->
-            <input type="checkbox" id="question3">
-            <label for="question3">Como funciona o processo de divórcio?</label>
-            <div class="accordion-content">
-                <p>O processo de divórcio pode variar dependendo das leis do país e do estado, bem como das circunstâncias específicas do caso. Em geral, envolve questões como divisão de bens, guarda de filhos e pensão alimentícia. É recomendável consultar um advogado especializado em direito de família para orientação específica sobre o processo de divórcio.</p>
+            <div class="question">
+                <div class="question-title relative block bg-gray-300 rounded-md p-4 mb-2 cursor-pointer">
+                    <span class="text-xl">Como funciona o processo de divórcio?</span>
+                    <svg class="h-6 w-6 absolute top-1 right-1 transform transition-transform duration-300 arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+                <div class="accordion-content bg-gray-100 rounded-md p-4 hidden">
+                    <p>O processo de divórcio pode variar dependendo das leis do país e do estado, bem como das circunstâncias específicas do caso. Em geral, envolve questões como divisão de bens, guarda de filhos e pensão alimentícia. É recomendável consultar um advogado especializado em direito de família para orientação específica sobre o processo de divórcio.</p>
+                </div>
             </div>
 
-
             <!-- Pergunta 4 -->
-            <input type="checkbox" id="question3">
-            <label for="question3">Como é feito o contrato com o Advogado ?</label>
-            <div class="accordion-content">
-                <p>O processo de divórcio pode variar dependendo das leis do país e do estado, bem como das circunstâncias específicas do caso. Em geral, envolve questões como divisão de bens, guarda de filhos e pensão alimentícia. É recomendável consultar um advogado especializado em direito de família para orientação específica sobre o processo de divórcio.</p>
+            <div class="question">
+                <div class="question-title relative block bg-gray-300 rounded-md p-4 mb-2 cursor-pointer">
+                    <span class="text-xl">Como é feito o contrato com o Advogado?</span>
+                    <svg class="h-6 w-6 absolute top-1 right-1 transform transition-transform duration-300 arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+                <div class="accordion-content bg-gray-100 rounded-md p-4 hidden">
+                    <p>O processo de divórcio pode variar dependendo das leis do país e do estado, bem como das circunstâncias específicas do caso. Em geral, envolve questões como divisão de bens, guarda de filhos e pensão alimentícia. É recomendável consultar um advogado especializado em direito de família para orientação específica sobre o processo de divórcio.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
 <!-- Fim do FAC -->
 <!-- Depoimentos de Clientes -->
-<!-- Testemunhos de Clientes -->
-<section class="py-16 px-4">
+
+<section class="py-16 px-4 bg-gradient-to-br from-gray-300 via-gray-500 to-gray-700">
+
     <div class="max-w-5xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-8">Depoimento de Clientes</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Testemunho 1 -->
             <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
-                <img src="img/cliente1.jpg" alt="Cliente 1" class="w-16 h-16 rounded-full mb-4">
+                <img src="img/garoto.png" alt="Cliente 1" class="w-16 h-16 rounded-full mb-4">
                 <p class="text-lg mb-4">"Excelente serviço, fui muito bem atendido pelo advogado. Recomendo!"</p>
                 <p class="text-gray-600">- João Silva</p>
             </div>
 
             <!-- Testemunho 2 -->
             <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
-                <img src="img/cliente2.jpg" alt="Cliente 2" class="w-16 h-16 rounded-full mb-4">
+                <img src="/img/menina (1).png" alt="Cliente 2" class="w-16 h-16 rounded-full mb-4">
                 <p class="text-lg mb-4">"Profissionalismo e eficiência impecáveis. Estou muito satisfeito com o resultado."</p>
                 <p class="text-gray-600">- Maria Santos</p>
             </div>
 
             <!-- Testemunho 3 -->
             <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
-                <img src="img/cliente3.jpg" alt="Cliente 3" class="w-16 h-16 rounded-full mb-4">
+                <img src="/img/homem1.png" alt="Cliente 3" class="w-16 h-16 rounded-full mb-4">
                 <p class="text-lg mb-4">"Atendimento personalizado e resolução rápida do meu caso. Recomendo sem dúvidas!"</p>
                 <p class="text-gray-600">- Pedro Oliveira</p>
             </div>

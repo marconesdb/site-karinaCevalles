@@ -1,15 +1,8 @@
-const accordions = document.querySelectorAll('.accordion-content');
+const arrows = document.querySelectorAll('.arrow');
 
-    accordions.forEach((accordion) => {
-        const parent = accordion.parentElement;
-        parent.querySelector('input[type="checkbox"]').addEventListener('change', () => {
-            if (parent.querySelector('input[type="checkbox"]').checked) {
-                accordion.classList.add('block');
-                accordion.classList.remove('hidden');
-            } else {
-                accordion.classList.add('hidden');
-                accordion.classList.remove('block');
-            }
+    arrows.forEach(arrow => {
+        arrow.addEventListener('click', () => {
+            const content = arrow.parentElement.nextElementSibling;
+            content.classList.toggle('hidden');
         });
     });
-
