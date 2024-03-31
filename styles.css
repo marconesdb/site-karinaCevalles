@@ -103,3 +103,13 @@ body{
 .animate-zoom-in {
   animation: zoom-in 5.5s ease-out;
 }
+
+.fale{
+  width: 300px;
+  margin: 0 auto;
+}
+
+
+form{
+  margin-bottom: 20px;
+}
